@@ -1,0 +1,413 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background-color: #F5F7F8;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.card {
+	padding: 25px;
+	border: 0.5px solid #fff;
+	border-radius: 3px;
+	box-shadow: 1px 1px 10px 3px #d7ecdb;
+	/*box-shadow: 1px 1px 10px 3px #aaa5a5;*/
+	transition: 0.5s;
+	background-color: #FFF;
+	position: relative;
+	font-size: 1.3em;
+}
+
+.card:hover {
+	/*box-shadow: 1px 1px 45px 10px #d7ecdb;*/
+	box-shadow: 1px 1px 45px 10px #b3ddbc;
+}
+
+.card p {
+	margin: 0;
+}
+
+.hero {
+	background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgba(0,0,0,0.0), rgba(0,40,0,1)), url("../images/quincy larson1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	padding: 0;
+}
+
+
+.hero .tagline {
+	position: absolute;
+	bottom: 5px;
+	right: 35px;
+	padding: 10px;
+	font-size: 3em;
+	color: #fff;
+	font-family: "Quicksand";
+}
+
+.tagline h1 {
+	background-color: rgba(252, 113, 125, 0.7);
+	display: inline-block;
+}
+.tagline p {
+	font-size: 0.5em;
+	background-color: rgba(0, 113, 12, 0.7);
+}
+
+.hero h1:after {
+	content: "...";
+}
+
+.quote {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.quote blockquote {
+	font-size: 1.3em;
+	border: none;
+	margin: 0;
+	position: relative;
+}
+
+.quote::before {
+	content: "\275D";
+	font-size: 10em;
+	display: inline-block;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	opacity: 0.1;
+}
+
+.statement p {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.timeline {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.timeline:before {
+	content: '';
+	display: inline-block;
+	width: 5px;
+	height: 100%;
+	background: #808C99;
+	border-radius: 5px;
+	position: absolute;
+	left: 20%;
+}
+
+.timeline .tmln-item {
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.timeline .tmln-item:last-child {
+	margin-bottom: 0;
+}
+
+.timeline-title {
+	position: relative;
+}
+
+.timeline-title p {
+	font-weight: 600;
+	position: absolute;
+	top: 24px;
+	left: 40px;
+}
+
+.timeline .card:before {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 10px solid #68efed;
+	border-radius: 100%;
+	position: absolute;
+	left: -8%;
+	box-shadow: 2px 2px 8px 0px #555;
+}
+
+.section-flag {
+	margin-top: 50px;
+}
+
+.section-flag:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: #fc717d;
+    border-radius: 50%;
+    border: 25px solid #6565df;
+    box-shadow: 2px 2px 10px 2px #aaa5a5;
+    transition: 0.5s;
+}
+
+.section-flag:hover::before {
+	box-shadow: 2px 2px 30px 8px #aaa5a5;
+}
+
+.section-flag h3 {
+	font-weight: 200;
+	font-size: 3.5em;
+}
+
+.next-plan {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.next-plan p {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+.next-plan .card {
+	border-left: 5px solid #808C99;
+	border-radius: 0 3px 3px 0;
+}
+
+.fcc-info {
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.fcc-info p:last-child {
+	font-weight: bold;
+}
+
+.links {
+	margin-top: 50px;
+	padding: 0 50px;
+}
+
+.links a {
+	padding: 15px 0;
+	margin-bottom: 30px;
+	color: #fff;
+	background-color: #58727F;
+	border-radius: 30px;
+	font-size: 1.2em;
+	font-weight: 600;
+	box-shadow: 2px 2px 8px 2px #aaa5a5;
+	transition: 0.5s;
+}
+
+.links a span {
+	display: inline-block;
+	position: relative;
+	transition: 0.3s;
+}
+
+.links a:hover span {
+	padding-right: 25px;
+}
+
+.links a span::after {
+	content: "\27A4";
+	position: absolute;
+	right: -30px;
+	opacity: 0;
+}
+
+.links a:hover span::after {
+	right: 0;
+	opacity: 1;
+}
+
+.links a:hover {
+	box-shadow: 2px 2px 20px 8px #aaa5a5;
+}
+
+.links a.twitter:hover {
+	background-color: #1DA1F2;
+}
+
+.links a.medium:hover {
+	background-color: #14C767;
+}
+
+.links a.quora:hover {
+	background-color: #B92B27;
+}
+
+.wish {
+	margin-top: 50px;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+.ql, .fcc {
+	font-weight: 600;
+}
+
+.ql a {
+	color: #fc717d;
+}
+
+.fcc a {
+	color: #00710C;
+}
+
+.footer p {
+	font-weight: 300;
+	position: relative;
+}
+
+.heartbeat {
+	color: #e80d2e;
+	animation: heartbeat 3s infinite;
+}
+
+
+/*Beating heart animation keyframe*/
+@keyframes heartbeat {
+	0% {
+		transform: scale(1.0);
+	}
+	5% {
+		transform: scale(1.3);
+	}
+	10% {
+		transform: scale(1.1);
+	}
+	20% {
+		transform: scale(1.5);
+	}
+	30% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+/**************************Media queries*************************/
+
+@media (max-width: 1365px) {
+	.hero .tagline {
+		bottom: 30px;
+		right: 30px;
+	}
+
+	.quote blockquote {
+		font-size: 1.2em;
+	}
+
+	.wish {
+		font-size: 2.5em;
+	}
+
+}
+
+@media (max-width: 1279px) {
+	.timeline .card:before {
+		left: -8.5%;
+	}
+}
+
+@media (max-width: 1023px) {
+	.timeline-title {
+		position: absolute;
+		width: 150px;
+		z-index: 1;
+		top: -55px;
+		left: 20px;
+	}
+
+	.timeline::before {
+		left: 0;
+	}
+
+	.timeline .card::before {
+		left: -12.5%;
+	}
+
+	.wish {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 991px) {
+	.timeline-title {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	.timeline-title p {
+		position: relative;
+		top: 0;
+		left: 20px;
+		font-size: 1.2em;
+	}
+
+	.timeline::before {
+		left: -5%;
+	}
+
+	.timeline .card::before {
+		left: -6%;
+	}
+}
+
+@media (max-width: 767px) {
+	.wish {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 639px) {
+	.hero .tagline {
+		right: 12%;
+		bottom: 10px;
+	}
+
+	.tagline p {
+		font-size: 0.4em;
+	}
+
+	.quote blockquote {
+		font-size: 1em;
+	}
+
+	.statement p {
+	font-size: 1.5em;
+	}
+
+	.timeline .card::before {
+		left: -7.5%;
+	}
+
+	.wish {
+		font-size: 1.2em;
+	}
+}
+
+@media (max-width: 479px) {
+	.tagline h1 {
+		font-size: 0.8em;
+	}
+
+	.tagline p {
+		font-size: 0.3em;
+	}
+}
