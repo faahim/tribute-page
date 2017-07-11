@@ -3,8 +3,4 @@ A tribute page dedicated to Quincy Larson made for freeCodeCamp project submissi
 
 This page is build using plain HTML and CSS. I've also used Bootstrap to make the page responsive. There's no handwritten JavaScript or jQuery. Below is a Screenshot of the page. Any suggestion or critics are welcome. :)
 
-<<<<<<< HEAD
 ![Screenshot of the Page](https://raw.github.com/faahim/Tribute-Page/master/Tribute%20Page%20ScreenShot.png)
-=======
-![Screenshot of the Page]("Tribute Page ScreenShot.png?raw=true")
->>>>>>> 5eaadd275086f90c46a42d0ce94f72c27268498e
